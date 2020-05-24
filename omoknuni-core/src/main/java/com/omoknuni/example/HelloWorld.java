@@ -1,17 +1,20 @@
 package com.omoknuni.example;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Spring boot 테스트용으로 Hello World를 표시하는 Class
+ * Spring boot 테스트용으로 Hello World를 표시하는 Class이다.<br>
+ * Log는 Logback을 사용한다.
  *
  * @author funa
  */
 @RestController
 @EnableAutoConfiguration
+@Slf4j
 public class HelloWorld {
 
     /**
@@ -30,6 +33,7 @@ public class HelloWorld {
      */
     @RequestMapping("/")
     String goHome() {
+        log.info("Hello Log World!");
         return "Hello World!";
     }
 
