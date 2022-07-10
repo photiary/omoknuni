@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Spring boot 테스트용으로 Hello World를 표시하는 Class이다.<br>
+ * Spring boot 테스트용으로 Hello World를 표시하는 Class이다.
+ * <p>
  * Log는 Logback을 사용한다.
  *
  * @author funa
